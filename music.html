@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Fancy WebSite</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="fancyicon.svg" />
+    </head>
+    <style>
+            /* Grids */
+    .mainGrid{
+        display: grid;
+        grid-template-areas:
+        "menu"
+        "block1"
+        "block2"
+        "block3"
+        "block4";
+        grid-area: auto; 
+        padding-left: 0.55%; 
+        margin-bottom: 300px;
+    }
+    @media (min-width: 500px){
+        .mainGrid{
+            display: grid;
+            grid-template-areas:
+            "block1 block2 block3 menu"
+            "block4 block4 block4 block4"
+            "block5 block5 block5 block5";
+            grid-area: auto;
+            grid-template-columns: repeat(4, 23.7%);
+            grid-gap: 1em;
+            
+        }
+        /* ul{
+            padding-top: 17%;
+        } */
+    }
+    @media (max-height: 750px){
+        .mainGrid{
+            height: 80vh;
+        }
+    }
+    .block1{
+        background: url(piano.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .block2{
+        background: url(guitars.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .block3{
+        background: url(music-sheet.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    </style>
+    <body>
+        <header class="header">
+            <h2 class="NiceStyle">The Fancy Website</h2>
+        </header>
+        <main>
+            <div class="thegreatestgrid">
+                <div class="mainGrid" id="mainGrid">
+                    <div class="menu">
+                        <ul>
+                        <li><p><a href="hicking.html" tabindex="0">Hicking</a></p></li>
+                        <li><p><a href="birdwatching.html" tabindex="0">Birdwatching</a></p></li>
+                        <li><p><a href="photos.html"tabindex="0">Photography</a></p></li> 
+                        <li><p><a href="music.html" tabindex="0"><b>Music</b></a></p></li>
+                        </ul>
+                    </div>
+                    <div class="block1 block" tabindex="1">
+                    <!-- Piano -->
+                    </div>
+                    <div class="block2 block" tabindex="2">
+                    <!-- Bass -->
+                    </div>
+                    <div class="block3 block" tabindex="3">
+                    <!-- Music sheet -->
+                    </div>
+                    <div class="block4" tabindex="4">
+                        <h1 class="NiceStyle">Music</h1>
+                    <P style="text-align:center; margin:0 auto; max-width: 600px;">Music is always fun. It is fun to listen, fun to play, fun to analyse. But the greatest fun is to play music with friends.</P>
+                    <p>Musical instruments the most fun to play:</p>
+                    <ol>
+                        <li>Triangle</li>
+                        <li>Bass</li>
+                        <li>Double bass</li>
+                        <li>Drums</li>
+                        <li>Piano</li>
+                    </ol>
+                    <p>Want to have some fun with music? <a href="https://www.thomann.de/blog/en/quiz-what-instrument-should-i-learn/">Take a quiz to find which instrument fits you best.</a></p>
+                    </div>
+                </div>
+                <div id="footer" class="footer">
+                    <p>All rights reserved ©2021</p>
+                </div>
+            </div> 
+        </main>
+    </body>
+</html>
+    

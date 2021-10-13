@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Fancy WebSite</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="fancyicon.svg" />
+    </head>
+    <style>
+            /* Grids */
+    .mainGrid{
+        display: grid;
+        grid-template-areas:
+        "menu"
+        "block1"
+        "block2"
+        "block3"
+        "block4"
+        "block5";
+        grid-area: auto; 
+        padding-left: 0.55%; 
+    }
+    @media (min-width: 500px){
+        .mainGrid{
+            display: grid;
+            grid-template-areas:
+            "block1 block1 block1 menu"
+            "block2 block3 block4 block5";
+            grid-area: auto;
+            grid-template-columns: repeat(4, 23.7%);
+            grid-gap: 1em;
+        }
+        /* ul{
+            padding-top: 17%;
+        } */
+    }
+    @media (max-height: 750px){
+        .mainGrid{
+            height: 80vh;
+        }
+    }
+ 
+    </style>
+    <body>
+        <header class="header">
+            <h2 class="NiceStyle">The Fancy Website</h2>
+        </header>
+        <main>
+            <div class="thegreatestgrid">
+                <div class="mainGrid" id="mainGrid">
+                    <div class="menu">
+                        <ul>
+                        <li><p><a href="hicking.html" tabindex="0">Hicking</a></p></li>
+                        <li><p><a href="birdwatching.html" tabindex="0"><b>Birdwatching</b></a></p></li>
+                        <li><p><a href="photos.html"tabindex="0">Photography</a></p></li> 
+                        <li><p><a href="music.html" tabindex="0">Music</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="block1" tabindex="1">
+                        <h3>Birdwatching is a real fun</h3>
+                        <p style="text-align:center; margin:0 auto; max-width: 600px;">It is literally for everyone. If you like to spend time with some kind of physical activity, you will be more than happy. Birds are not just fast they also can fly. The perfect hobby for active people. However, If you don't enjoy physical activities much, but prefer to be laying down in the same place for a whole day, good news for you. You can just lay down in any place, preferably outside or next to a window, and enjoy. Birds will fly next to you, and you don't need to do anything. 
+                        </p>
+                        <p><a href="https://www.bbowt.org.uk/blog/wylie-horn/beginners-guide-bird-watching-get-started-these-5-tips">Find out more about birdwatching </a></p>
+                        <p>These are my best shots from birdwatching:</p>
+                    </div>
+                    <div class="block2 block" tabindex="2">
+                        <img src="birs1.jpg" class="photo" alt="Seagull">
+                        <p>Seagull</p>
+                    </div>
+                    <div class="block3 block" tabindex="3">
+                        <img src="birs2.jpg" class="photo" alt="Pigeon">
+                        <p>Pigeon</p>
+                    </div>
+                    <div class="block4 block" tabindex="4">
+                        <img src="birs3.jpg" class="photo" alt="Goose">
+                        <p>Goose (I gues)</p>
+                    </div>
+                    <div class="block5 block" tabindex="5">
+                        <img src="birs4.jpg" class="photo" alt="Chickens">
+                        <p>Gallus domesticus</p>
+                    </div>
+                </div>
+                <div id="footer" class="footer">
+                    <p>All rights reserved ©2021</p>
+                </div>
+            </div> 
+        </main>
+    </body>
+</html>
+    

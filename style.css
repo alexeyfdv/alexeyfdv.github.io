@@ -1,0 +1,150 @@
+/* Main CSS */
+body{
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    --accentcolour: #FF6D00; /* Accent Colour*/
+}
+h3{
+    text-align: center;
+}
+/* The grid of grids */
+.thegreatestgird{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "mainG"
+    "foot";
+    grid-area: auto;
+    grid-template-rows: auto 1fr auto;
+}
+/* Focus */
+.block:focus {
+    background-color: var(--accentcolour);
+  }
+a:focus {
+    background-color: var(--accentcolour);
+  } 
+a:hover{
+    background-color: var(--accentcolour);
+    color: white;
+  }
+/* Menu */
+ul {
+    list-style-type: none;
+/* margin: 1rem; */
+    padding: 0;
+  }
+ul li a{
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size:larger;
+}
+ul li a:hover{
+    color: white;
+    font-weight: 500;
+}
+ul li a:focus{
+    color: white;
+    font-weight: 500;
+}
+.footer {
+    position:fixed;
+    width:100%;
+    height:60px;
+    background:#5A189A;
+    grid-area: foot;
+    bottom: 0; 
+    left: 0; 
+    right: 0
+    }
+#footer p{
+    color: white;
+}
+ol{
+    text-align: center;
+  list-style-position: inside;
+}
+/* Class' styles */
+.NiceStyle{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+.block{
+        background-color:white;
+        margin: 0.5em;
+        }     
+.block:hover{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transform: scale(1.03);
+}
+.photo{
+    max-width:100%;
+    max-height:100%;
+}
+/* Blocks */
+.block1{
+    grid-area: block1;
+}
+.block2{
+    grid-area: block2;
+}
+.block3{
+    grid-area: block3;
+}
+.block4{
+    grid-area: block4;
+}
+.block5{
+    grid-area: block5;
+}
+.block6{
+    grid-area: block6;
+}
+.block7{
+    grid-area: block7;
+}
+.menu{
+    grid-area: menu;
+    padding: 0.5em;
+}
+.mainGrid{
+grid-area: mainG;
+padding:0; 
+height:100%;
+margin-bottom: 200px;
+}
+#mainGrid{
+    grid-area: mainG;
+} 
+/* Forms */
+.niceform{
+    max-width: 400px; 
+    padding: auto; 
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: block;
+}
+.niceform button{
+    background-color: #3C096C;
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 0px;
+    border-radius: 3%;
+}
+.niceform button:hover{
+    transform: scale(110%);
+    background-color: var(--accentcolour);
+}
+.niceform legend{
+    background-color: #3C096C;
+    color: white;
+}
